@@ -1,0 +1,92 @@
+&.radio {
+  display: flex;
+  flex-direction: column;
+
+  .cover {
+    width: 100%;
+    height: get-vh(410px);
+    background-image: url("../img/radio/0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-grow: 1;
+    background-image: url("../img/radio/0.jpg");
+
+    &:after {
+      background-image: url("../img/radio/0.jpg");
+      z-index: 0;
+      position: absolute;
+      width: calc(100% + 1.40625vh + 1.40625vh);
+      height: calc(100% + 1.25vh + 1.17188vh);
+      top: -1.40625vh;
+      left: -1.40625vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      -webkit-filter: blur(4px);
+      filter: blur(10px);
+    }
+
+    & > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .song-name {
+      margin-top: get-vh(30px);
+      font-family: $sf-bold;
+      font-size: get-vh(22px);
+      line-height: get-vh(28px);
+      letter-spacing: get-vh(0.41px);
+    }
+
+    .song-artist {
+      font-family: $sf-light;
+      font-size: get-vh(16px);
+      line-height: get-vh(28px);
+      letter-spacing: get-vh(0.41px);
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      margin-top: get-vh(30px);
+
+      a {
+        transition: opacity .1s ease;
+
+        &:hover {
+          opacity: .7;
+          transition: opacity .1s ease;
+        }
+
+        &.prev,
+        &.next {
+          svg {
+            width: get-vh(17px);
+            height: get-vh(20px);
+          }
+        }
+
+        &.play {
+          margin: 0 get-vh(25px);
+
+          svg {
+            width: get-vh(103px);
+            height: get-vh(103px);
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,132 @@
+&.dark {
+  .phone__eyebrow {
+    .icons svg {
+      fill: #ffffff;
+    }
+  }
+
+  .phone__eyebrow-time {
+    color: #ffffff;
+  }
+
+  .app {
+    &.setting {
+      background: #000000;
+      color: #ffffff;
+
+      .player-info {
+        background: #1C1C1E;
+      }
+
+      .item-container {
+        background: #1C1C1E;
+      }
+    }
+
+    &.setting__wallpapers {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    &.weazel-news-view {
+      background: linear-gradient(180deg, #1A1B21 0%, #0A0B0D 100%);
+
+      .container {
+        color: #ffffff;
+
+        .item {
+          .text{
+            background: rgba(193, 193, 239, 0.1);
+
+            .number{
+              color: #5E92FF;
+            }
+          }
+
+          a{
+            &.button-call{
+              background: #3976F4;
+
+              &:hover{
+                background: transparentize(#3976F4, .3);
+              }
+            }
+            &.button-send-sms{
+              background: #1A5BE3;
+
+              &:hover{
+                background: transparentize(#1A5BE3, .3);
+              }
+            }
+          }
+        }
+      }
+
+      .header{
+        a{
+          background: rgba(255, 255, 255, 0.1);
+          color: #ffffff;
+
+          &:hover{
+            background: rgba(255, 255, 255, 0.2);
+           }
+        }
+      }
+    }
+
+    &.weazel-news-control{
+      background: linear-gradient(180deg, #1A1B21 0%, #0A0B0D 100%);
+
+      .container {
+        color: #ffffff;
+
+        .item {
+          > .text{
+            background: rgba(193, 193, 239, 0.1);
+
+            .name{
+              color: #ffffff;
+            }
+
+            .number{
+              color: #5E92FF;
+            }
+
+            .time{
+              color: rgba(255, 255, 255, 0.35);
+            }
+          }
+        }
+        .button{
+          background: #3976F4;
+        }
+      }
+
+      .header{
+        a{
+          background: rgba(255, 255, 255, 0.1);
+          color: #ffffff;
+
+          &:hover{
+            background: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+    }
+
+    &.transport {
+      background: linear-gradient(180deg, #061424 0%, #1D2939 100%);
+
+      span{
+        &.hello{
+          color: #FFFFFF;
+        }
+      }
+
+      .title{
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+

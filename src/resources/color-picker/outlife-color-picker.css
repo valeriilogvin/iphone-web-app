@@ -1,0 +1,67 @@
+.colorpicker {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0; }
+.colorpicker-default__spectrum-cursor {
+    border: 1px solid #fff;
+    width: 1.11111vh;
+    height: 1.11111vh; }
+.colorpicker-default--hex-only {
+    width: 24.07407vh; }
+.colorpicker-default--hex-only .colorpicker-default__spectrum-container,
+.colorpicker-default--hex-only .colorpicker-default__spectrum-canvas {
+    height: 15.74074vh;
+    width: 21.57407vh}
+.colorpicker-default__spectrum-canvas {
+    border-radius: 0.46296vh;
+    height: 15.74074vh;
+    width: 21.57407vh; }
+.colorpicker-default__info {
+    display: none; }
+.colorpicker-default__hue-container {
+    margin-left: 0.92593vh;
+    height: 12.5vh;
+    width: 1.11111vh;
+    border-radius: 4.62963vh; }
+.colorpicker-default__hue-canvas {
+    width: 1.11111vh;
+    height: 12.5vh;
+    border-radius: 4.62963vh; }
+.colorpicker-default__hue-cursor {
+    border: 0.18519vh solid #fff;
+    width: 1.11111vh;
+    height: 1.11111vh; }
+.colorpicker-circle-anchor__color {
+    border: none;
+    width: 2.03704vh;
+    height: 2.03704vh; }
+
+.color-picker{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5.55556vh;
+    padding: 3.24074vh 2.77778vh;
+}
+.color-picker .title {
+    margin: 0 0 0.74074vh;
+    font-family: "Circe Bold", sans-serif;
+    font-size: 1.85185vh;
+    line-height: 1.48148vh;
+    text-align: center; }
+.main-color, .additional-color {
+    position: relative; }
+.main-color .title, .additional-color .title {
+    margin: 0 0 0.46296vh;
+    font-family: "Circe Regular", sans-serif;
+    font-size: 1.57407vh;
+    line-height: 2.22222vh;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4); }
+.main-color .color-circle, .additional-color .color-circle {
+    position: absolute;
+    right: 0;
+    bottom: 0.37037vh; }
+.additional-color {
+    margin-top: 1.85185vh; }
