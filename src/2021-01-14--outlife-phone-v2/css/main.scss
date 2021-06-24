@@ -7,7 +7,7 @@ $sf-regular: 'SF Pro Regular', sans-serif;
 $avenir-medium: 'Avenir Medium', sans-serif;
 $avenir-heavy: 'Avenir Heavy', sans-serif;
 
-@import "fonts";
+@import "_fonts";
 
 .slide {
   position: absolute;
@@ -48,7 +48,7 @@ $avenir-heavy: 'Avenir Heavy', sans-serif;
   z-index: 1;
   right: 20px;
 
-  @import "dark";
+  @import "_dark";
 
   .button-back{
     position: absolute;
@@ -368,12 +368,12 @@ $avenir-heavy: 'Avenir Heavy', sans-serif;
   height: 100%;
   width: 100%;
 
-  @import "setting";
+  @import "_setting";
 
-  @import "weazel-news";
+  @import "_weazel-news";
 
-  @import "bank";
+  @import "_bank";
 
-  @import "transport";
+  @import "_transport";
 
 }
